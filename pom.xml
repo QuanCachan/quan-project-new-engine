@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+        This file is part of the Squashtest platform.
+        Copyright (C) 2018 - 2018 HENIX
+
+        See the NOTICE file distributed with this work for additional
+        information regarding copyright ownership.
+
+        This is free software: you can redistribute it and/or modify
+        it under the terms of the GNU Lesser General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        this software is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU Lesser General Public License for more details.
+
+        You should have received a copy of the GNU Lesser General Public License
+        along with this software.  If not, see <http://www.gnu.org/licenses />.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>fr.henix.squash</groupId>
+        <artifactId>quan-project-parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    
+    <artifactId>quan-project-umbrella</artifactId>
+    
+    <packaging>pom</packaging>
+    
+    <!-- ============================ Modules ======================== -->
+    
+    
+    <!-- =============================== main properties ======================= -->
+    
+    <properties>
+        
+    </properties>
+    
+    <dependencyManagement>
+        
+    </dependencyManagement>
+    
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.mycila</groupId>
+                    <artifactId>license-maven-plugin</artifactId>
+                    <configuration>
+                        <excludes combine.children="append">
+                            <!-- TODO : look into how we may include headers in the core's plugin manifests -->
+                            <exclude>**/*.mf</exclude>
+                            <!-- 
+                                TODO Legacy exclusions we'll probably HAVE to take a look at because
+                                they seem WAYYYYY overwide !!
+                            -->
+                            <exclude>**/squash-ta-integration-test/src/**</exclude>
+                            <exclude>**/squash-ta-legacy-integration-test/src/**</exclude>
+                            <exclude>**/squash-ta-vcs-interaction-test/src/squashTA/tests/**</exclude>
+                            <exclude>**/squash-ta-failure-test/src/**</exclude>
+                            <exclude>**/squash-ta-legacy-failure-test/src/**</exclude>
+                            <exclude>**/archetype-resources/**</exclude>
+                            <exclude>**/squash-ta-maven-plugin/src/main/resources/**</exclude>
+                            <exclude>**/documentation/**</exclude>
+                        </excludes>
+                        <mapping>
+                            <!-- TODO : map the .macro extensions to manage the header for core-built-in macros -->
+                        </mapping>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        
+        <plugins>
+            <plugin>
+                <groupId>com.mycila</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <inherited>false</inherited>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- 	Enforce maven-plugin-plugin version to 3.2 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-plugin-plugin</artifactId>
+                <version>3.2</version>
+            </plugin>
+        </plugins>
+    </build>
+    
+    <repositories>
+        <!-- our components -->
+        <repository>
+            <id>org.squashtest.repo.release</id>
+            <name>Squashtest repository for releases</name>
+            <url>http://repo.squashtest.org/maven2/release</url>
+        </repository>
+        <!-- useful when fetching spock 0.6-groovy-1.8 -->
+        <repository>
+            <id>repo1.maven.org</id>
+            <name>Central Repository</name>
+            <url>http://repo1.maven.org/maven2/</url>
+        </repository>
+
+        <repository>
+            <id>eviware.repository</id>
+            <url>http://www.soapui.org/repository/maven2</url>
+        </repository>
+  		
+        <repository>
+            <id>central</id>
+            <url>http://repo1.maven.org/maven2/</url>
+        </repository>
+    </repositories>
+</project>
