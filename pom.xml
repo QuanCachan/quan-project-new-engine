@@ -34,10 +34,12 @@
     <packaging>pom</packaging>
     
     <!-- ============================ Modules ======================== -->
-    
+    <modules>
+        <module>quan-project-core</module>
+        <module>quan-project-api</module>
+    </modules>
     
     <!-- =============================== main properties ======================= -->
-    
     <properties>
         
     </properties>
