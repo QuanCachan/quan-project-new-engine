@@ -33,6 +33,15 @@
     
     <packaging>pom</packaging>
     
+    <url>https://github.com/QuanCachan/quan-project-new-engine/</url>
+    
+    <scm>
+        <connection>scm:git:git@github.com:QuanCachan/quan-project-new-engine.git</connection>
+        <developerConnection>scm:git:git@github.com:QuanCachan/quan-project-new-engine.git</developerConnection>
+        <url>https://github.com/QuanCachan/quan-project-new-engine/</url>
+        <tag>HEAD</tag>
+    </scm>
+    
     <!-- ============================ Modules ======================== -->
     <modules>
         <module>quan-project-core</module>
