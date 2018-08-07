@@ -35,5 +35,6 @@
     
     <modules>
         <module>quan-project-framework</module>
+        <module>quan-project-project-archetype</module>
     </modules>
 </project>
