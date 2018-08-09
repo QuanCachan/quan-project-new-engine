@@ -1,5 +1,6 @@
 syntax:glob
 .project
+.target
 .classpath
 .checkstyle
 .pmd
