@@ -30,6 +30,7 @@ import java.util.List;
  *
  * @author qtran
  */
+@SuppressWarnings("serial")
 public class BinaryAssertionFailedException extends AssertionFailedException{
     /**
      * Expected result

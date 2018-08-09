@@ -36,7 +36,8 @@ public class BrokenTestException extends RuntimeException {
     /**
      *
      */
-    
+    private static final long serialVersionUID = -809853483277368638L;
+
     public BrokenTestException() {
     }
 
@@ -51,5 +52,5 @@ public class BrokenTestException extends RuntimeException {
     public BrokenTestException(String message, Throwable cause) {
         super(message, cause);
     }
-    
+
 }

@@ -31,6 +31,7 @@ import java.util.List;
  *
  * @author qtran
  */
+@SuppressWarnings("serial")
 public class AssertionFailedException extends RuntimeException {
 
     private Resource<?> actual;

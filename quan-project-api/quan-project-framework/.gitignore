@@ -1,0 +1,32 @@
+syntax:glob
+.project
+.classpath
+.checkstyle
+.pmd
+.ruleset
+global-groovy.log
+soapui-errors.log
+soapui.log
+nbactions.xml
+
+syntax:regexp
+^(.*/)?\.settings/.*$
+^.*/target/.*$
+^.*/logs/.*$
+syntax: regexp
+^documentation/en/faqWathsSquashTA/images/testSuiteStructure\.svg$
+syntax: regexp
+^documentation/en/faqWathsSquashTA/images/testSuiteStructure\.jpg$
+syntax: regexp
+^test/squash-ta-integration-test/logConfiguration\.properties$
+syntax: glob
+test/squash-ta-integration-test/soapui.log
+test/squash-ta-integration-test/soapui-errors.log
+test/squash-ta-integration-test/global-groovy.log
+test/squash-ta-failure-test/soapui.log
+test/squash-ta-failure-test/soapui-errors.log
+test/squash-ta-failure-test/global-groovy.log
+
+syntax: regexp
+^sahi\.pid$
+^[\w-]+\/[\w-]+\/bin$
