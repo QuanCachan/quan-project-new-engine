@@ -19,7 +19,7 @@
  *     along with this software.  If not, see <http://www.gnu.org/licenses />.
  */
 
-package fr.henix.squash.backbone.definition;
+package fr.henix.squash.backbone.definition.engine;
 
 import fr.henix.squash.backbone.engine.wrapper.Nature;
 

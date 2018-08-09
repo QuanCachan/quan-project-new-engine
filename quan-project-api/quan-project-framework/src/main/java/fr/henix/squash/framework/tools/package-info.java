@@ -1,6 +1,6 @@
 /**
  *     This file is part of the Squashtest platform.
- *     Copyright (C) 2018 - 2018 HENIX
+ *     Copyright (C) 2011 - 2018 Henix
  *
  *     See the NOTICE file distributed with this work for additional
  *     information regarding copyright ownership.
@@ -18,24 +18,7 @@
  *     You should have received a copy of the GNU Lesser General Public License
  *     along with this software.  If not, see <http://www.gnu.org/licenses />.
  */
-
-package fr.henix.squash.backbone.definition.engine;
-
-import fr.henix.squash.backbone.engine.wrapper.Nature;
-import fr.henix.squash.framework.components.UnaryAssertion;
-
-
-
 /**
- *
- * @author qtran
+ * This package will provide tools to help implement Squash TA components.
  */
-public class UnaryAssertionDefinition extends EngineComponentDefinition<UnaryAssertion<?>> {
-    
-    public static final Nature UNARY_ASSERTION_NATURE = new Nature("(unary assertion)");
-    
-    public UnaryAssertionDefinition(Nature firstNature, Nature category, Class<UnaryAssertion<?>> componentClass) {
-        super(firstNature, UNARY_ASSERTION_NATURE, category, componentClass);
-    }
-    
-}
+package fr.henix.squash.framework.tools;

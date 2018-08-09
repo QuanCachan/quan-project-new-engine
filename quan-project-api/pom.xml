@@ -36,5 +36,6 @@
     <modules>
         <module>quan-project-framework</module>
         <module>quan-project-project-archetype</module>
+        <module>quan-project-test-toolkit</module>
     </modules>
 </project>
